@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\BSU\\Software Engineering\\Homework\\groomy-insert-name-here\\Groomy_proto\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C0BD4B0D-8499-449E-9410-794ADAD80717}|Groomy_proto\\Groomy_proto.vcxproj|F:\\BSU\\Software Engineering\\Homework\\groomy-insert-name-here\\Groomy_proto\\Groomy_proto\\Groomy_proto.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C0BD4B0D-8499-449E-9410-794ADAD80717}|Groomy_proto\\Groomy_proto.vcxproj|solutionrelative:Groomy_proto\\Groomy_proto.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Groomy_proto.cpp",
+              "DocumentMoniker": "F:\\BSU\\Software Engineering\\Homework\\groomy-insert-name-here\\Groomy_proto\\Groomy_proto\\Groomy_proto.cpp",
+              "RelativeDocumentMoniker": "Groomy_proto\\Groomy_proto.cpp",
+              "ToolTip": "F:\\BSU\\Software Engineering\\Homework\\groomy-insert-name-here\\Groomy_proto\\Groomy_proto\\Groomy_proto.cpp",
+              "RelativeToolTip": "Groomy_proto\\Groomy_proto.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-21T00:33:27.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
