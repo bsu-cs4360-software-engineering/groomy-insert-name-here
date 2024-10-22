@@ -129,11 +129,14 @@
   <ItemGroup>
     <ClInclude Include="framework.h" />
     <ClInclude Include="Groomy_proto.h" />
+    <ClInclude Include="CommonIncludes.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="UserInfo.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Groomy_proto.cpp" />
+    <ClCompile Include="UserInfo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Groomy_proto.rc" />
