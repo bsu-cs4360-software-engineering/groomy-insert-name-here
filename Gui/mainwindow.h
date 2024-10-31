@@ -1,7 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
 #include <QMainWindow>
+#include <QDateTimeEdit>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -22,6 +22,7 @@ private slots:
     void on_Login_clicked();
     void showTablePopup();
     void onSaveCompleted();
+    void on_pushButton_2_clicked();
 
 private:
     Ui::MainWindow *ui;

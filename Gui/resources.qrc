@@ -1,6 +1,8 @@
 <RCC>
-    <qresource prefix="/images">
-        <file>images/user.png</file>
+    <qresource prefix="/resources">
+        <file>images/courage.png</file>
         <file>images/security.png</file>
+        <file>images/user.png</file>
+        <file>customers.json</file>
     </qresource>
 </RCC>

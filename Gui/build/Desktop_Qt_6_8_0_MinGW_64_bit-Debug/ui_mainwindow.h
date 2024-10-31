@@ -13,6 +13,7 @@
 #include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QCommandLinkButton>
+#include <QtWidgets/QDateEdit>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
@@ -33,11 +34,14 @@ public:
     QLabel *Title;
     QWidget *menu_area;
     QPushButton *pushButton;
+    QPushButton *pushButton_2;
+    QPushButton *pushButton_3;
     QLabel *security;
     QLabel *user;
     QCommandLinkButton *commandLinkButton;
     QLabel *courage;
     QWidget *widget;
+    QDateEdit *dateEdit;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -49,10 +53,11 @@ public:
         MainWindow->setFont(font);
         MainWindow->setCursor(QCursor(Qt::CursorShape::ArrowCursor));
         MainWindow->setAutoFillBackground(false);
-        MainWindow->setStyleSheet(QString::fromUtf8("color: rgb(132, 132, 132);\n"
-"background-color: rgb(106, 106, 106);"));
+        MainWindow->setStyleSheet(QString::fromUtf8("background-color: rgb(125, 125, 125);"));
         MainWindow->setToolButtonStyle(Qt::ToolButtonStyle::ToolButtonIconOnly);
+        MainWindow->setDocumentMode(false);
         MainWindow->setTabShape(QTabWidget::TabShape::Rounded);
+        MainWindow->setDockOptions(QMainWindow::DockOption::AllowTabbedDocks|QMainWindow::DockOption::AnimatedDocks);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         Login = new QPushButton(centralwidget);
@@ -103,22 +108,37 @@ public:
         menu_area->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 255);"));
         pushButton = new QPushButton(menu_area);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(-10, 170, 211, 31));
+        pushButton->setGeometry(QRect(-10, 20, 211, 31));
         QFont font3;
         font3.setFamilies({QString::fromUtf8("Calibri")});
         font3.setPointSize(16);
         font3.setBold(true);
         pushButton->setFont(font3);
+        pushButton->setFocusPolicy(Qt::FocusPolicy::StrongFocus);
         pushButton->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 255);\n"
 "background-color: rgb(245, 245, 245);"));
+        pushButton_2 = new QPushButton(menu_area);
+        pushButton_2->setObjectName("pushButton_2");
+        pushButton_2->setGeometry(QRect(-10, 50, 211, 31));
+        pushButton_2->setFont(font3);
+        pushButton_2->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 255);\n"
+"background-color: rgb(255, 255, 255);"));
+        pushButton_3 = new QPushButton(menu_area);
+        pushButton_3->setObjectName("pushButton_3");
+        pushButton_3->setGeometry(QRect(-10, 80, 211, 31));
+        pushButton_3->setFont(font3);
+        pushButton_3->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 255);\n"
+"background-color: rgb(255, 255, 255);"));
         security = new QLabel(centralwidget);
         security->setObjectName("security");
         security->setGeometry(QRect(670, 240, 30, 30));
+        security->setStyleSheet(QString::fromUtf8("image: url(:/resources/images/security.png);"));
         security->setPixmap(QPixmap(QString::fromUtf8("images/security.png")));
         security->setScaledContents(true);
         user = new QLabel(centralwidget);
         user->setObjectName("user");
         user->setGeometry(QRect(670, 180, 30, 30));
+        user->setStyleSheet(QString::fromUtf8("image: url(:/resources/images/user.png);"));
         user->setPixmap(QPixmap(QString::fromUtf8("images/user.png")));
         user->setScaledContents(true);
         commandLinkButton = new QCommandLinkButton(centralwidget);
@@ -134,12 +154,23 @@ public:
         courage = new QLabel(centralwidget);
         courage->setObjectName("courage");
         courage->setGeometry(QRect(260, 160, 201, 251));
-        courage->setPixmap(QPixmap(QString::fromUtf8("images/courage.png")));
+        courage->setStyleSheet(QString::fromUtf8("image: url(:/resources/images/courage.png);"));
+        courage->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/images/courage.png")));
         courage->setScaledContents(true);
         widget = new QWidget(centralwidget);
         widget->setObjectName("widget");
         widget->setGeometry(QRect(-10, 0, 1980, 20));
         widget->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);"));
+        dateEdit = new QDateEdit(centralwidget);
+        dateEdit->setObjectName("dateEdit");
+        dateEdit->setGeometry(QRect(1000, 20, 211, 41));
+        dateEdit->setFont(font3);
+        dateEdit->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 255);\n"
+"background-color: rgb(255, 255, 255);"));
+        dateEdit->setReadOnly(false);
+        dateEdit->setCurrentSection(QDateTimeEdit::Section::MonthSection);
+        dateEdit->setCalendarPopup(true);
+        dateEdit->setTimeSpec(Qt::TimeSpec::LocalTime);
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
@@ -157,6 +188,8 @@ public:
         lineEditPassword->setPlaceholderText(QCoreApplication::translate("MainWindow", "password", nullptr));
         Title->setText(QCoreApplication::translate("MainWindow", "Groomy", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "Home", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("MainWindow", "Customers", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("MainWindow", "Contact Us", nullptr));
         security->setText(QString());
         user->setText(QString());
         commandLinkButton->setText(QCoreApplication::translate("MainWindow", "Create new account here!", nullptr));

@@ -9,13 +9,23 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    customer.cpp \
+    customers.cpp \
+    customerservice.cpp \
+    editcustomerdialog.cpp \
     main.cpp \
     mainwindow.cpp \
-    tablepopup.cpp
+    tablepopup.cpp \
+    viewcustomerdialog.cpp
 
 HEADERS += \
+    customer.h \
+    customers.h \
+    customerservice.h \
+    editcustomerdialog.h \
     mainwindow.h \
-    tablepopup.h
+    tablepopup.h \
+    viewcustomerdialog.h
 
 FORMS += \
     mainwindow.ui
@@ -25,9 +35,11 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-RESOURCES +=
+RESOURCES += \
+    resources.qrc
 
-DISTFILES +=
+DISTFILES += \
+    customers.json
 
 
 
