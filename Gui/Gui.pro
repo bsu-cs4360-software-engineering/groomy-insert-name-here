@@ -24,6 +24,7 @@ HEADERS += \
     CommonIncludes.h \
     CustomerInfo.h \
     UserInfo.h \
+    bcrypt.h \
     crypt_blowfish/crypt.h \
     crypt_blowfish/crypt_blowfish.h \
     crypt_blowfish/crypt_gensalt.h \
