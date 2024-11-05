@@ -1,12 +1,18 @@
 #pragma once
 
+#include <QString>
+#include <QFile>
+#include <QTextStream>
+#include <QJsonDocument>
+#include <QJsonObject>
+#include <QDebug>
 #include <iostream>
 #include <string>
 #include <cmath>
 #include <vector>
 #include <fstream>
 #include <cstring>
-#include <nlohmann/json.hpp>
+
 #include "bcrypt.h"
 #include <filesystem>
 
