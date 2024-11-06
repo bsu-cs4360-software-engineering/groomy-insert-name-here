@@ -25,15 +25,31 @@
    <bool>false</bool>
   </property>
   <property name="styleSheet">
+<<<<<<< HEAD
    <string notr="true">color: rgb(132, 132, 132);
 background-color: rgb(106, 106, 106);</string>
+=======
+   <string notr="true">background-color: rgb(125, 125, 125);</string>
+>>>>>>> workspace-Lucas
   </property>
   <property name="toolButtonStyle">
    <enum>Qt::ToolButtonStyle::ToolButtonIconOnly</enum>
   </property>
+<<<<<<< HEAD
   <property name="tabShape">
    <enum>QTabWidget::TabShape::Rounded</enum>
   </property>
+=======
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::TabShape::Rounded</enum>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::DockOption::AllowTabbedDocks|QMainWindow::DockOption::AnimatedDocks</set>
+  </property>
+>>>>>>> workspace-Lucas
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="Login">
     <property name="geometry">
@@ -181,7 +197,38 @@ background-color: rgb(255, 255, 255);</string>
      <property name="geometry">
       <rect>
        <x>-10</x>
+<<<<<<< HEAD
        <y>170</y>
+=======
+       <y>20</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+       <pointsize>16</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::FocusPolicy::StrongFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 255);
+background-color: rgb(245, 245, 245);</string>
+     </property>
+     <property name="text">
+      <string>Home</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>50</y>
+>>>>>>> workspace-Lucas
        <width>211</width>
        <height>31</height>
       </rect>
@@ -195,10 +242,41 @@ background-color: rgb(255, 255, 255);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(0, 0, 255);
+<<<<<<< HEAD
 background-color: rgb(245, 245, 245);</string>
      </property>
      <property name="text">
       <string>Home</string>
+=======
+background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Customers</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>80</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+       <pointsize>16</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 255);
+background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Contact Us</string>
+>>>>>>> workspace-Lucas
      </property>
     </widget>
    </widget>
@@ -211,6 +289,12 @@ background-color: rgb(245, 245, 245);</string>
       <height>30</height>
      </rect>
     </property>
+<<<<<<< HEAD
+=======
+    <property name="styleSheet">
+     <string notr="true">image: url(:/resources/images/security.png);</string>
+    </property>
+>>>>>>> workspace-Lucas
     <property name="text">
      <string/>
     </property>
@@ -230,6 +314,12 @@ background-color: rgb(245, 245, 245);</string>
       <height>30</height>
      </rect>
     </property>
+<<<<<<< HEAD
+=======
+    <property name="styleSheet">
+     <string notr="true">image: url(:/resources/images/user.png);</string>
+    </property>
+>>>>>>> workspace-Lucas
     <property name="text">
      <string/>
     </property>
@@ -274,11 +364,21 @@ background-color: rgb(245, 245, 245);</string>
       <height>251</height>
      </rect>
     </property>
+<<<<<<< HEAD
+=======
+    <property name="styleSheet">
+     <string notr="true">image: url(:/resources/images/courage.png);</string>
+    </property>
+>>>>>>> workspace-Lucas
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
+<<<<<<< HEAD
      <pixmap>images/courage.png</pixmap>
+=======
+     <pixmap>:/new/prefix1/images/courage.png</pixmap>
+>>>>>>> workspace-Lucas
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -297,6 +397,42 @@ background-color: rgb(245, 245, 245);</string>
      <string notr="true">background-color: rgb(0, 0, 0);</string>
     </property>
    </widget>
+<<<<<<< HEAD
+=======
+   <widget class="QDateEdit" name="dateEdit">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>20</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 255);
+background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+    <property name="currentSection">
+     <enum>QDateTimeEdit::Section::MonthSection</enum>
+    </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
+    <property name="timeSpec">
+     <enum>Qt::TimeSpec::LocalTime</enum>
+    </property>
+   </widget>
+>>>>>>> workspace-Lucas
   </widget>
  </widget>
  <resources/>

@@ -2,6 +2,10 @@
 #include <QVBoxLayout>
 #include <QTableWidgetItem>
 #include <QMessageBox>
+<<<<<<< HEAD
+=======
+#include <QPushButton>
+>>>>>>> workspace-Lucas
 
 TablePopup::TablePopup(QWidget *parent) : QDialog(parent)
 {

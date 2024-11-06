@@ -1,7 +1,12 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
+<<<<<<< HEAD
 
 #include <QMainWindow>
+=======
+#include <QMainWindow>
+#include <QDateTimeEdit>
+>>>>>>> workspace-Lucas
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -22,6 +27,10 @@ private slots:
     void on_Login_clicked();
     void showTablePopup();
     void onSaveCompleted();
+<<<<<<< HEAD
+=======
+    void on_pushButton_2_clicked();
+>>>>>>> workspace-Lucas
 
 private:
     Ui::MainWindow *ui;

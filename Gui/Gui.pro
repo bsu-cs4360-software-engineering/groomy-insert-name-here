@@ -9,6 +9,7 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+<<<<<<< HEAD
     Appointments.cpp \
     CustomerInfo.cpp \
     UserInfo.cpp \
@@ -77,6 +78,25 @@ HEADERS += \
     nlohmann/thirdparty/hedley/hedley.hpp \
     nlohmann/thirdparty/hedley/hedley_undef.hpp \
     tablepopup.h
+=======
+    customer.cpp \
+    customers.cpp \
+    customerservice.cpp \
+    editcustomerdialog.cpp \
+    main.cpp \
+    mainwindow.cpp \
+    tablepopup.cpp \
+    viewcustomerdialog.cpp
+
+HEADERS += \
+    customer.h \
+    customers.h \
+    customerservice.h \
+    editcustomerdialog.h \
+    mainwindow.h \
+    tablepopup.h \
+    viewcustomerdialog.h
+>>>>>>> workspace-Lucas
 
 FORMS += \
     mainwindow.ui
@@ -86,6 +106,7 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
+<<<<<<< HEAD
 RESOURCES +=
 
 DISTFILES += \
@@ -96,6 +117,13 @@ DISTFILES += \
     crypt_blowfish/glibc-2.1.3-crypt.diff \
     crypt_blowfish/glibc-2.14-crypt.diff \
     crypt_blowfish/glibc-2.3.6-crypt.diff
+=======
+RESOURCES += \
+    resources.qrc
+
+DISTFILES += \
+    customers.json
+>>>>>>> workspace-Lucas
 
 
 

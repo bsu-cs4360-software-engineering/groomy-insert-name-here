@@ -3,6 +3,11 @@
 #include <QMessageBox>
 #include <QPixmap>
 #include "tablepopup.h"
+<<<<<<< HEAD
+=======
+#include "customers.h"
+#include <QDateTime>
+>>>>>>> workspace-Lucas
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -15,12 +20,26 @@ MainWindow::MainWindow(QWidget *parent)
     ui->security->setPixmap(pix2);
     QPixmap pix3("C:/Users/lprit/OneDrive/Documents/Gui/images/courage.png");
     ui->courage->setPixmap(pix3);
+<<<<<<< HEAD
     connect(ui->Login, &QPushButton::clicked, this, &MainWindow::on_Login_clicked);
+=======
+
+    // Access the QDateTimeEdit widget directly
+    if (ui->dateEdit) {
+        // Set the current local date and time
+        ui->dateEdit->setDateTime(QDateTime::currentDateTime());
+        ui->dateEdit->setCalendarPopup(true);
+    }
+>>>>>>> workspace-Lucas
 }
 
 MainWindow::~MainWindow()
 {
+<<<<<<< HEAD
     delete ui;
+=======
+    delete ui; 
+>>>>>>> workspace-Lucas
 }
 void MainWindow::on_Login_clicked()
 {
@@ -47,3 +66,12 @@ void MainWindow::on_commandLinkButton_clicked()
     dialog->exec();
 }
 
+<<<<<<< HEAD
+=======
+void MainWindow::on_pushButton_2_clicked()
+{
+    Customers *dialog = new Customers(this);
+    dialog->exec();
+}
+
+>>>>>>> workspace-Lucas

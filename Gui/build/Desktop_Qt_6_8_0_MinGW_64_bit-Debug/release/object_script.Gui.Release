@@ -1,0 +1,14 @@
+release/customer.o
+release/customers.o
+release/customerservice.o
+release/editcustomerdialog.o
+release/main.o
+release/mainwindow.o
+release/tablepopup.o
+release/viewcustomerdialog.o
+release/qrc_resources.o
+release/moc_customers.o
+release/moc_editcustomerdialog.o
+release/moc_mainwindow.o
+release/moc_tablepopup.o
+release/moc_viewcustomerdialog.o

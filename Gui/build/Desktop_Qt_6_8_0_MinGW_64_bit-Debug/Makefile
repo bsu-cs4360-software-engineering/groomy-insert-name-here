@@ -274,7 +274,12 @@ Makefile: ../../Gui.pro C:/Qt/6.8.0/mingw_64/mkspecs/win32-g++/qmake.conf C:/Qt/
 		C:/Qt/6.8.0/mingw_64/lib/Qt6Gui.prl \
 		C:/Qt/6.8.0/mingw_64/lib/Qt6Core.prl \
 		C:/Qt/6.8.0/mingw_64/lib/Qt6EntryPoint.prl \
+<<<<<<< HEAD
 		C:/Qt/6.8.0/mingw_64/mkspecs/features/build_pass.prf
+=======
+		C:/Qt/6.8.0/mingw_64/mkspecs/features/build_pass.prf \
+		../../resources.qrc
+>>>>>>> workspace-Lucas
 	$(QMAKE) -o Makefile ..\..\Gui.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 C:/Qt/6.8.0/mingw_64/mkspecs/features/spec_pre.prf:
 C:/Qt/6.8.0/mingw_64/mkspecs/features/device_config.prf:
@@ -481,6 +486,10 @@ C:/Qt/6.8.0/mingw_64/lib/Qt6Gui.prl:
 C:/Qt/6.8.0/mingw_64/lib/Qt6Core.prl:
 C:/Qt/6.8.0/mingw_64/lib/Qt6EntryPoint.prl:
 C:/Qt/6.8.0/mingw_64/mkspecs/features/build_pass.prf:
+<<<<<<< HEAD
+=======
+../../resources.qrc:
+>>>>>>> workspace-Lucas
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\..\Gui.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 

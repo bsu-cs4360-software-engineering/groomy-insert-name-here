@@ -1,0 +1,25 @@
+// #include <tests> // 
+#include <QMainWindow>
+#include "mainwindow.h"
+
+class TestMainWindow : public QObject
+{
+    Q_OBJECT
+
+private slots:
+    void initTestCase() {
+        // Initialization code here
+    }
+
+    void cleanupTestCase() {
+        // Cleanup code here
+    }
+
+    void testHello() {
+        MainWindow mainWindow;
+        QVERIFY(mainWindow.windowTitle() == "Hello");
+    }
+};
+
+QTEST_MAIN(TestMainWindow)
+#include "test_mainwindow.ui"
