@@ -1,25 +1,24 @@
 #ifndef CUSTOMERSERVICE_H
 #define CUSTOMERSERVICE_H
 
-#include <QJsonArray>
-#include <QJsonObject>
-#include <QFile>
+#include <vector>
+#include <QString>
 #include "customer.h"
 
-class CustomerService
-{
+class CustomerService {
 public:
-    CustomerService(const QString &filePath);
+    CustomerService(const QString &filePath); // Constructor with file path
 
-    QList<Customer> getAllCustomers() const;
-    void addCustomer(const Customer &customer);
+    std::vector<Customer> getAllCustomers();
+    Customer getCustomerById(int id);
+    void createCustomer(const Customer &customer);
     void updateCustomer(const Customer &customer);
-    void deleteCustomer(const QString &email);
-    QJsonArray loadJsonArray() const;
+    void deleteCustomer(int id);
 
 private:
     QString filePath;
-    void saveJsonArray(const QJsonArray &jsonArray) const;
+    std::vector<Customer> loadCustomers();
+    void saveCustomers(const std::vector<Customer> &customers); // Correct declaration
 };
 
-#endif // CUSTOMERSERVICE_H
+#endif // CUSTOMERSERVICE_

@@ -9,23 +9,51 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    appointment.cpp \
+    appointmentsdialog.cpp \
+    appointmentservice.cpp \
     customer.cpp \
     customers.cpp \
     customerservice.cpp \
+    customerview.cpp \
+    editappointmentdialog.cpp \
     editcustomerdialog.cpp \
+    editnoteview.cpp \
+    editserviceview.cpp \
     main.cpp \
     mainwindow.cpp \
+    note.cpp \
+    notesdialog.cpp \
+    noteservice.cpp \
+    service.cpp \
+    services.cpp \
+    servicesservice.cpp \
+    servicesview.cpp \
     tablepopup.cpp \
-    viewcustomerdialog.cpp
+    viewappointmentdialog.cpp
 
 HEADERS += \
+    appointment.h \
+    appointmentsdialog.h \
+    appointmentservice.h \
     customer.h \
     customers.h \
     customerservice.h \
+    customerview.h \
+    editappointmentdialog.h \
     editcustomerdialog.h \
+    editnoteview.h \
+    editserviceview.h \
     mainwindow.h \
+    note.h \
+    notesdialog.h \
+    noteservice.h \
+    service.h \
+    services.h \
+    servicesservice.h \
+    servicesview.h \
     tablepopup.h \
-    viewcustomerdialog.h
+    viewappointmentdialog.h
 
 FORMS += \
     mainwindow.ui
@@ -39,7 +67,14 @@ RESOURCES += \
     resources.qrc
 
 DISTFILES += \
-    customers.json
+    appointment_notes.json \
+    appointments.json \
+    customer_notes.json \
+    customers.json \
+    notes.json \
+    service_notes.json \
+    services.json \
+    users.json
 
 
 

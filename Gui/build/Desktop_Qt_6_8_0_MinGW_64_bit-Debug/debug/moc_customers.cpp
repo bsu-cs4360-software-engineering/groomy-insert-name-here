@@ -7,7 +7,6 @@
 *****************************************************************************/
 
 #include "../../../customers.h"
-#include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>
@@ -39,9 +38,9 @@ constexpr auto qt_meta_stringdata_CLASSCustomersENDCLASS = QtMocHelpers::stringD
     "Customers",
     "onViewButtonClicked",
     "",
+    "row",
     "onEditButtonClicked",
     "onDeleteButtonClicked",
-    "row",
     "onCommandLinkButtonClicked"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
@@ -63,15 +62,15 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSCustomersENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   38,    2, 0x08,    1 /* Private */,
-       3,    0,   39,    2, 0x08,    2 /* Private */,
-       4,    1,   40,    2, 0x08,    3 /* Private */,
-       6,    0,   43,    2, 0x08,    5 /* Private */,
+       1,    1,   38,    2, 0x08,    1 /* Private */,
+       4,    1,   41,    2, 0x08,    3 /* Private */,
+       5,    1,   44,    2, 0x08,    5 /* Private */,
+       6,    0,   47,    2, 0x08,    7 /* Private */,
 
  // slots: parameters
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void, QMetaType::Int,    5,
+    QMetaType::Void, QMetaType::Int,    3,
+    QMetaType::Void, QMetaType::Int,    3,
+    QMetaType::Void, QMetaType::Int,    3,
     QMetaType::Void,
 
        0        // eod
@@ -88,8 +87,10 @@ Q_CONSTINIT const QMetaObject Customers::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<Customers, std::true_type>,
         // method 'onViewButtonClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'onEditButtonClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'onDeleteButtonClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
@@ -105,8 +106,8 @@ void Customers::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         auto *_t = static_cast<Customers *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->onViewButtonClicked(); break;
-        case 1: _t->onEditButtonClicked(); break;
+        case 0: _t->onViewButtonClicked((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 1: _t->onEditButtonClicked((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 2: _t->onDeleteButtonClicked((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 3: _t->onCommandLinkButtonClicked(); break;
         default: ;

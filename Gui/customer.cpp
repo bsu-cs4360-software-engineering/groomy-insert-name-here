@@ -1,33 +1,28 @@
 #include "customer.h"
 
-Customer::Customer(const QJsonObject &json)
-{
-    firstName = json["firstName"].toString();
-    lastName = json["lastName"].toString();
-    email = json["email"].toString();
-    phoneNumber = json["phoneNumber"].toString();
-    address = json["address"].toString();
-}
+Customer::Customer(int id, const QString &firstName, const QString &lastName, const QString &email, const QString &phoneNumber, const QString &address)
+    : id(id), firstName(firstName), lastName(lastName), email(email), phoneNumber(phoneNumber), address(address) {}
 
-QString Customer::getFirstName() const { return firstName; }
-QString Customer::getLastName() const { return lastName; }
-QString Customer::getEmail() const { return email; }
-QString Customer::getPhoneNumber() const { return phoneNumber; }
-QString Customer::getAddress() const { return address; }
+Customer::Customer() : id(0), firstName(""), lastName(""), email(""), phoneNumber(""), address("") {} // Implement default constructor
 
-void Customer::setFirstName(const QString &firstName) { this->firstName = firstName; }
-void Customer::setLastName(const QString &lastName) { this->lastName = lastName; }
-void Customer::setEmail(const QString &email) { this->email = email; }
-void Customer::setPhoneNumber(const QString &phoneNumber) { this->phoneNumber = phoneNumber; }
-void Customer::setAddress(const QString &address) { this->address = address; }
-
-QJsonObject Customer::toJson() const
-{
+QJsonObject Customer::toJson() const {
     QJsonObject json;
+    json["id"] = id;
     json["firstName"] = firstName;
     json["lastName"] = lastName;
     json["email"] = email;
     json["phoneNumber"] = phoneNumber;
     json["address"] = address;
     return json;
+}
+
+Customer Customer::fromJson(const QJsonObject &json) {
+    return Customer(
+        json["id"].toInt(),
+        json["firstName"].toString(),
+        json["lastName"].toString(),
+        json["email"].toString(),
+        json["phoneNumber"].toString(),
+        json["address"].toString()
+        );
 }

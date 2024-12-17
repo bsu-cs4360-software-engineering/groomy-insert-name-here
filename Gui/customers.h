@@ -2,13 +2,12 @@
 #define CUSTOMERS_H
 
 #include <QDialog>
-#include <QPushButton>
 #include <QTableWidget>
 #include <QCommandLinkButton>
-#include <QVector>
 #include <QSignalMapper>
+#include <QVector>
 #include "customerservice.h"
-#include "editcustomerdialog.h"
+#include "customer.h"
 
 class Customers : public QDialog
 {
@@ -16,23 +15,31 @@ class Customers : public QDialog
 
 public:
     explicit Customers(QWidget *parent = nullptr);
-    ~Customers();
 
 private slots:
-    void onViewButtonClicked();
-    void onEditButtonClicked();
+    void onViewButtonClicked(int row);
+    void onEditButtonClicked(int row);
     void onDeleteButtonClicked(int row);
     void onCommandLinkButtonClicked();
 
 private:
-    QTableWidget *tableWidget;
-    QCommandLinkButton *commandLinkButton;
-    QVector<bool> deletedRows;
-    CustomerService *customerService;
-    QSignalMapper *signalMapper;
     void setupTable();
     void loadJsonData();
     void addCustomerToJson(const QString &firstName, const QString &lastName, const QString &email, const QString &phoneNumber, const QString &address);
+    void addActionButtons(int row);
+
+    QTableWidget *tableWidget;
+    QCommandLinkButton *commandLinkButton;
+    CustomerService *customerService;
+    QSignalMapper *signalMapper;
+    QVector<bool> deletedRows;
+
+    // Add member variables to store customer data
+    QString firstName;
+    QString lastName;
+    QString email;
+    QString phoneNumber;
+    QString address;
 };
 
 #endif // CUSTOMERS_H

@@ -40,7 +40,7 @@
    <set>QMainWindow::DockOption::AllowTabbedDocks|QMainWindow::DockOption::AnimatedDocks</set>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="Login">
+   <widget class="QPushButton" name="pushButtonLogin">
     <property name="geometry">
      <rect>
       <x>700</x>
@@ -48,6 +48,12 @@
       <width>131</width>
       <height>24</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>12</pointsize>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">color: rgb(0, 0, 255);</string>
@@ -96,9 +102,10 @@
     </property>
     <property name="font">
      <font>
-      <family>Arial</family>
+      <family>Calibri</family>
       <pointsize>12</pointsize>
       <italic>true</italic>
+      <bold>true</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -123,9 +130,10 @@ background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="font">
      <font>
-      <family>Arial</family>
+      <family>Calibri</family>
       <pointsize>12</pointsize>
       <italic>true</italic>
+      <bold>true</bold>
      </font>
     </property>
     <property name="contextMenuPolicy">
@@ -213,7 +221,7 @@ background-color: rgb(245, 245, 245);</string>
      <property name="geometry">
       <rect>
        <x>-10</x>
-       <y>50</y>
+       <y>80</y>
        <width>211</width>
        <height>31</height>
       </rect>
@@ -237,7 +245,7 @@ background-color: rgb(255, 255, 255);</string>
      <property name="geometry">
       <rect>
        <x>-10</x>
-       <y>80</y>
+       <y>660</y>
        <width>211</width>
        <height>31</height>
       </rect>
@@ -255,6 +263,78 @@ background-color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
       <string>Contact Us</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="appointments">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>110</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+       <pointsize>16</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 255);
+background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Appointments</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="services">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>50</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+       <pointsize>16</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>Services</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>140</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+       <pointsize>16</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>Invoices</string>
      </property>
     </widget>
    </widget>
@@ -302,18 +382,19 @@ background-color: rgb(255, 255, 255);</string>
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QCommandLinkButton" name="commandLinkButton">
+   <widget class="QCommandLinkButton" name="pushButtonCreateAccount">
     <property name="geometry">
      <rect>
-      <x>690</x>
-      <y>280</y>
-      <width>151</width>
+      <x>630</x>
+      <y>270</y>
+      <width>261</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>7</pointsize>
+      <family>Calibri</family>
+      <pointsize>12</pointsize>
       <underline>true</underline>
      </font>
     </property>

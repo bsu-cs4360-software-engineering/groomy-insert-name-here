@@ -1,7 +1,15 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
+
 #include <QMainWindow>
+#include <QJsonObject>
+#include <QPushButton>
 #include <QDateTimeEdit>
+#include "appointmentservice.h"
+#include "customerservice.h"
+#include "servicesservice.h"
+#include "noteservice.h"
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -18,13 +26,27 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_commandLinkButton_clicked();
-    void on_Login_clicked();
     void showTablePopup();
     void onSaveCompleted();
     void on_pushButton_2_clicked();
+    void onAppointmentsButtonClicked();
+    void onServicesButtonClicked();
+    void onLoginClicked();
+    void onCreateAccountClicked();
+    void onContactUsButtonClicked();
+
 
 private:
     Ui::MainWindow *ui;
+    void loadCustomers();
+    std::shared_ptr<AppointmentService> appointmentService;
+    std::shared_ptr<CustomerService> customerService;
+    std::shared_ptr<ServicesService> servicesService;
+    std::shared_ptr<NotesService> notesService;
+    QLineEdit *usernameEdit;
+    QLineEdit *passwordEdit;
+    QPushButton *createAccountButton;
+    QPushButton *loginButton;
+
 };
 #endif // MAINWINDOW_H

@@ -36,6 +36,8 @@ public:
     QPushButton *pushButton;
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
+    QPushButton *appointments;
+    QPushButton *services;
     QLabel *security;
     QLabel *user;
     QCommandLinkButton *commandLinkButton;
@@ -119,16 +121,28 @@ public:
 "background-color: rgb(245, 245, 245);"));
         pushButton_2 = new QPushButton(menu_area);
         pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setGeometry(QRect(-10, 50, 211, 31));
+        pushButton_2->setGeometry(QRect(-10, 80, 211, 31));
         pushButton_2->setFont(font3);
         pushButton_2->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 255);\n"
 "background-color: rgb(255, 255, 255);"));
         pushButton_3 = new QPushButton(menu_area);
         pushButton_3->setObjectName("pushButton_3");
-        pushButton_3->setGeometry(QRect(-10, 80, 211, 31));
+        pushButton_3->setGeometry(QRect(-10, 660, 211, 31));
         pushButton_3->setFont(font3);
         pushButton_3->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 255);\n"
 "background-color: rgb(255, 255, 255);"));
+        appointments = new QPushButton(menu_area);
+        appointments->setObjectName("appointments");
+        appointments->setGeometry(QRect(-10, 110, 211, 31));
+        appointments->setFont(font3);
+        appointments->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 255);\n"
+"background-color: rgb(255, 255, 255);"));
+        services = new QPushButton(menu_area);
+        services->setObjectName("services");
+        services->setGeometry(QRect(-10, 50, 211, 31));
+        services->setFont(font3);
+        services->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"color: rgb(0, 0, 255);"));
         security = new QLabel(centralwidget);
         security->setObjectName("security");
         security->setGeometry(QRect(670, 240, 30, 30));
@@ -190,6 +204,8 @@ public:
         pushButton->setText(QCoreApplication::translate("MainWindow", "Home", nullptr));
         pushButton_2->setText(QCoreApplication::translate("MainWindow", "Customers", nullptr));
         pushButton_3->setText(QCoreApplication::translate("MainWindow", "Contact Us", nullptr));
+        appointments->setText(QCoreApplication::translate("MainWindow", "Appointments", nullptr));
+        services->setText(QCoreApplication::translate("MainWindow", "Services", nullptr));
         security->setText(QString());
         user->setText(QString());
         commandLinkButton->setText(QCoreApplication::translate("MainWindow", "Create new account here!", nullptr));

@@ -7,17 +7,17 @@
 TablePopup::TablePopup(QWidget *parent) : QDialog(parent)
 {
     setWindowTitle("New user account");
-    setGeometry(600, 600, 500, 100);
+    setGeometry(500, 100, 800, 500);
 
     QVBoxLayout *layout = new QVBoxLayout(this);
 
     table = new QTableWidget(this);
     table->setRowCount(1);
-    table->setColumnCount(4);
-    table->setHorizontalHeaderLabels({"First name", "Last name", "Email address", "password"});
+    table->setColumnCount(5);
+    table->setHorizontalHeaderLabels({"First name", "Last name", "Email address","username", "password"});
 
     QList<QList<QString>> data = {
-        {"", "", "","" },
+        {"", "", "","","" },
 
     };
 
@@ -36,8 +36,8 @@ TablePopup::TablePopup(QWidget *parent) : QDialog(parent)
     layout->addWidget(saveButton);
 
     this->setStyleSheet("background-color: rgb(106,106,106);");  // Background color for the dialog
-    table->setStyleSheet("QTableWidget { background-color: rgb(106,106,106); gridline-color: rgb(0,0,225); }"
-                         "QHeaderView::section { background-color: rgb(0,0,225); }");
+    table->setStyleSheet("QTableWidget { background-color: rgb(106,106,106); gridline-color: ; }"
+                         "QHeaderView::section { background-color: ; }");
 }
 
 void TablePopup::saveTableData()
